@@ -153,7 +153,7 @@ def create_ui():
     stock_dropdown_menu.pack(side=tk.LEFT, padx=10)
 
     # Create a dropdown for selecting the number of years for historical data
-    years_options = [1, 2, 5, 10]  # Options for 1, 3, 5, or 10 years
+    years_options = [1, 2, 5, 10]  # Options for 1, 2, 5, or 10 years
     selected_year_var = StringVar(root)
     selected_year_var.set(str(years_options[0]))  # Default to 1 year
 
