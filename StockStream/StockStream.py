@@ -238,7 +238,7 @@ def create_ui():
     root.mainloop()
 
 
-# List of stock symbols and company names (updated to show both symbol and name in the dropdown)
+# List of stock symbols and company names (2nd index to show both symbol and name in the dropdown)
 stock_symbols = [
     ("AAPL", "AAPL - Apple"),
     ("ADBE", "ADBE - Adobe"),
