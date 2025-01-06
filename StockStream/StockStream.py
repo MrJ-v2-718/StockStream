@@ -24,11 +24,11 @@ def get_stock_data(symbol):
         return symbol, None
 
 
-# Function to get historical data for plotting (1 year)
+# Function to get historical data for plotting
 def get_historical_data(symbol, years):
     stock = yf.Ticker(symbol)
     try:
-        # Fetch data for the past 365 days (1 year)
+        # Fetch data for the specified period of years
         stock_data = stock.history(period=f"{years}y")
         # Return dates and closing prices for the plot
         return stock_data.index, stock_data['Close']
